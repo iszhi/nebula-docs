@@ -151,7 +151,8 @@ cp config.yml config.yaml
 
 On the lighthouse host, you'll need to ensure `am_lighthouse: true` is set. Generally, a lighthouse will not have any
 entries in its `static_host_map`, because all hosts will report themselves to a lighthouse. If you use multiple
-lighthouses, they do not generally need to know about each other.
+lighthouses, they do not generally need to know about each other. Similarly, a lighthouse will not have any entries in
+its `lighthouse.hosts`.
 
 ```yaml
 static_host_map:
